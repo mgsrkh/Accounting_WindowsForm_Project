@@ -21,5 +21,15 @@ namespace Accounting_Project
         {
 
         }
+
+        private void NewUser_bt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Edit_bt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
