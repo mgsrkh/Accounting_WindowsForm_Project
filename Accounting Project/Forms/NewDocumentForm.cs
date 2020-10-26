@@ -21,5 +21,20 @@ namespace Accounting_Project
         {
 
         }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Save_ti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Document_gbox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

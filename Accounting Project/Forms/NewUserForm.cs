@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Accounting_Project
+namespace Accounting_Project.Forms
 {
-    public partial class Report : MetroFramework.Forms.MetroForm
+    public partial class NewUserForm : MetroFramework.Forms.MetroForm
     {
-        public Report()
+        public NewUserForm()
         {
             InitializeComponent();
         }
 
-        private void Report_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Report_bt_Click(object sender, EventArgs e)
+        private void NewUserForm_Load(object sender, EventArgs e)
         {
 
         }

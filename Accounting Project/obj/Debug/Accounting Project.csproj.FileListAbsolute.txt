@@ -74,3 +74,4 @@ C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\
 C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting Project.csproj.CopyComplete
 C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting Project.exe
 C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting Project.pdb
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.NewUserForm.resources
