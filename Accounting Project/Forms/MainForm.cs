@@ -19,7 +19,7 @@ namespace Accounting_Project
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void NewAccount_mti_Click(object sender, EventArgs e)
@@ -30,13 +30,14 @@ namespace Accounting_Project
 
         private void UserManagement_mti_Click(object sender, EventArgs e)
         {
+            //UserManagement um = UserManagement.CreateInstance();
             UserManagement um = new UserManagement();
             um.Show();
         }
 
         private void NewDocument_mti_Click(object sender, EventArgs e)
         {
-            NewDocument nd = new NewDocument();
+            NewDocument nd = NewDocument.CreateInstance();
             nd.Show();
         }
 
@@ -48,8 +49,13 @@ namespace Accounting_Project
 
         private void Taraz4Sotouni_mti_Click(object sender, EventArgs e)
         {
-            Taraz4Sotouni taraz = new Taraz4Sotouni();
+            Taraz4Sotouni taraz = Taraz4Sotouni.CreateInstance();
             taraz.Show();
+        }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

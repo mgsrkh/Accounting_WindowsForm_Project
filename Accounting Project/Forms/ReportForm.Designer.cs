@@ -37,6 +37,9 @@
             // crystalReportViewer1
             // 
             this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(23, 115);
@@ -54,6 +57,7 @@
             this.View_bt.TabIndex = 1;
             this.View_bt.Text = "مشاهده گزارش";
             this.View_bt.UseSelectable = true;
+            this.View_bt.Click += new System.EventHandler(this.View_bt_Click);
             // 
             // Print_bt
             // 
@@ -64,6 +68,7 @@
             this.Print_bt.TabIndex = 2;
             this.Print_bt.Text = "پرینت";
             this.Print_bt.UseSelectable = true;
+            this.Print_bt.Click += new System.EventHandler(this.Print_bt_Click);
             // 
             // Report_bt
             // 

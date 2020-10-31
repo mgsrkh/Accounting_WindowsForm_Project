@@ -75,3 +75,9 @@ C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\
 C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting Project.exe
 C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting Project.pdb
 C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.NewUserForm.resources
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.DocumentViewForm.resources
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.ViewTarazForm.resources
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.LoginForm.resources
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.UpdateUser.resources
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.UpdateDocument.resources
+C:\Users\mgsrkh#\Source\Repos\Miss-houshyar-Mahyar\Accounting Project\obj\Debug\Accounting_Project.Forms.UpdateTaraz.resources

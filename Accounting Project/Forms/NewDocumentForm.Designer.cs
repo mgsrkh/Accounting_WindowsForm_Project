@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.Document_gbox = new System.Windows.Forms.GroupBox();
-            this.DocumentNum_lb = new MetroFramework.Controls.MetroLabel();
-            this.DocumentNum_txbox = new System.Windows.Forms.TextBox();
-            this.DocumentDetail_lb = new MetroFramework.Controls.MetroLabel();
-            this.Document_lbl = new System.Windows.Forms.Label();
-            this.DocumentDate_lb = new MetroFramework.Controls.MetroLabel();
-            this.DocumentPage_lb = new MetroFramework.Controls.MetroLabel();
+            this.DocumentDate_DateTime = new MetroFramework.Controls.MetroDateTime();
             this.DocumentPage_txbox = new System.Windows.Forms.TextBox();
+            this.DocumentPage_lb = new MetroFramework.Controls.MetroLabel();
+            this.DocumentDate_lb = new MetroFramework.Controls.MetroLabel();
+            this.Document_lbl = new System.Windows.Forms.Label();
+            this.DocumentDetail_lb = new MetroFramework.Controls.MetroLabel();
+            this.DocumentNum_txbox = new System.Windows.Forms.TextBox();
+            this.DocumentNum_lb = new MetroFramework.Controls.MetroLabel();
             this.Save_ti = new MetroFramework.Controls.MetroTile();
             this.View_ti = new MetroFramework.Controls.MetroTile();
             this.MoeenCode_lb = new System.Windows.Forms.Label();
@@ -50,9 +51,8 @@
             this.Bedehkar_txbox = new System.Windows.Forms.TextBox();
             this.Bestankar_txbox = new System.Windows.Forms.TextBox();
             this.MandeHesab_txbox = new System.Windows.Forms.TextBox();
-            this.DocumentDate_DateTime = new MetroFramework.Controls.MetroDateTime();
             this.DocumentTotal_lb = new System.Windows.Forms.Label();
-            this.TotalBedehkat_txbox = new System.Windows.Forms.TextBox();
+            this.TotalBedehkar_txbox = new System.Windows.Forms.TextBox();
             this.TotalBestankar_txbox = new System.Windows.Forms.TextBox();
             this.Document_gbox.SuspendLayout();
             this.SuspendLayout();
@@ -76,54 +76,22 @@
             this.Document_gbox.TabStop = false;
             this.Document_gbox.Enter += new System.EventHandler(this.Document_gbox_Enter);
             // 
-            // DocumentNum_lb
+            // DocumentDate_DateTime
             // 
-            this.DocumentNum_lb.AutoSize = true;
-            this.DocumentNum_lb.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.DocumentNum_lb.Location = new System.Drawing.Point(720, 26);
-            this.DocumentNum_lb.Name = "DocumentNum_lb";
-            this.DocumentNum_lb.Size = new System.Drawing.Size(86, 20);
-            this.DocumentNum_lb.TabIndex = 0;
-            this.DocumentNum_lb.Text = ": شماره سند";
+            this.DocumentDate_DateTime.Location = new System.Drawing.Point(6, 21);
+            this.DocumentDate_DateTime.MinimumSize = new System.Drawing.Size(0, 30);
+            this.DocumentDate_DateTime.Name = "DocumentDate_DateTime";
+            this.DocumentDate_DateTime.Size = new System.Drawing.Size(170, 30);
+            this.DocumentDate_DateTime.TabIndex = 8;
             // 
-            // DocumentNum_txbox
+            // DocumentPage_txbox
             // 
-            this.DocumentNum_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocumentNum_txbox.Location = new System.Drawing.Point(614, 26);
-            this.DocumentNum_txbox.Multiline = true;
-            this.DocumentNum_txbox.Name = "DocumentNum_txbox";
-            this.DocumentNum_txbox.Size = new System.Drawing.Size(100, 32);
-            this.DocumentNum_txbox.TabIndex = 1;
-            // 
-            // DocumentDetail_lb
-            // 
-            this.DocumentDetail_lb.AutoSize = true;
-            this.DocumentDetail_lb.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.DocumentDetail_lb.Location = new System.Drawing.Point(732, 94);
-            this.DocumentDetail_lb.Name = "DocumentDetail_lb";
-            this.DocumentDetail_lb.Size = new System.Drawing.Size(74, 20);
-            this.DocumentDetail_lb.TabIndex = 2;
-            this.DocumentDetail_lb.Text = ": شرح سند";
-            // 
-            // Document_lbl
-            // 
-            this.Document_lbl.AutoSize = true;
-            this.Document_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Document_lbl.Location = new System.Drawing.Point(264, 61);
-            this.Document_lbl.Name = "Document_lbl";
-            this.Document_lbl.Size = new System.Drawing.Size(311, 32);
-            this.Document_lbl.TabIndex = 3;
-            this.Document_lbl.Text = "-----   سند حسابداری   -----";
-            // 
-            // DocumentDate_lb
-            // 
-            this.DocumentDate_lb.AutoSize = true;
-            this.DocumentDate_lb.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.DocumentDate_lb.Location = new System.Drawing.Point(182, 26);
-            this.DocumentDate_lb.Name = "DocumentDate_lb";
-            this.DocumentDate_lb.Size = new System.Drawing.Size(77, 20);
-            this.DocumentDate_lb.TabIndex = 4;
-            this.DocumentDate_lb.Text = ": تاریخ سند";
+            this.DocumentPage_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocumentPage_txbox.Location = new System.Drawing.Point(52, 101);
+            this.DocumentPage_txbox.Multiline = true;
+            this.DocumentPage_txbox.Name = "DocumentPage_txbox";
+            this.DocumentPage_txbox.Size = new System.Drawing.Size(75, 27);
+            this.DocumentPage_txbox.TabIndex = 7;
             // 
             // DocumentPage_lb
             // 
@@ -136,14 +104,54 @@
             this.DocumentPage_lb.Text = ": صفحه";
             this.DocumentPage_lb.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
-            // DocumentPage_txbox
+            // DocumentDate_lb
             // 
-            this.DocumentPage_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocumentPage_txbox.Location = new System.Drawing.Point(52, 101);
-            this.DocumentPage_txbox.Multiline = true;
-            this.DocumentPage_txbox.Name = "DocumentPage_txbox";
-            this.DocumentPage_txbox.Size = new System.Drawing.Size(75, 27);
-            this.DocumentPage_txbox.TabIndex = 7;
+            this.DocumentDate_lb.AutoSize = true;
+            this.DocumentDate_lb.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.DocumentDate_lb.Location = new System.Drawing.Point(182, 26);
+            this.DocumentDate_lb.Name = "DocumentDate_lb";
+            this.DocumentDate_lb.Size = new System.Drawing.Size(77, 20);
+            this.DocumentDate_lb.TabIndex = 4;
+            this.DocumentDate_lb.Text = ": تاریخ سند";
+            // 
+            // Document_lbl
+            // 
+            this.Document_lbl.AutoSize = true;
+            this.Document_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Document_lbl.Location = new System.Drawing.Point(264, 61);
+            this.Document_lbl.Name = "Document_lbl";
+            this.Document_lbl.Size = new System.Drawing.Size(311, 32);
+            this.Document_lbl.TabIndex = 3;
+            this.Document_lbl.Text = "-----   سند حسابداری   -----";
+            // 
+            // DocumentDetail_lb
+            // 
+            this.DocumentDetail_lb.AutoSize = true;
+            this.DocumentDetail_lb.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.DocumentDetail_lb.Location = new System.Drawing.Point(732, 94);
+            this.DocumentDetail_lb.Name = "DocumentDetail_lb";
+            this.DocumentDetail_lb.Size = new System.Drawing.Size(74, 20);
+            this.DocumentDetail_lb.TabIndex = 2;
+            this.DocumentDetail_lb.Text = ": شرح سند";
+            // 
+            // DocumentNum_txbox
+            // 
+            this.DocumentNum_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocumentNum_txbox.Location = new System.Drawing.Point(614, 26);
+            this.DocumentNum_txbox.Multiline = true;
+            this.DocumentNum_txbox.Name = "DocumentNum_txbox";
+            this.DocumentNum_txbox.Size = new System.Drawing.Size(100, 32);
+            this.DocumentNum_txbox.TabIndex = 1;
+            // 
+            // DocumentNum_lb
+            // 
+            this.DocumentNum_lb.AutoSize = true;
+            this.DocumentNum_lb.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.DocumentNum_lb.Location = new System.Drawing.Point(720, 26);
+            this.DocumentNum_lb.Name = "DocumentNum_lb";
+            this.DocumentNum_lb.Size = new System.Drawing.Size(86, 20);
+            this.DocumentNum_lb.TabIndex = 0;
+            this.DocumentNum_lb.Text = ": شماره سند";
             // 
             // Save_ti
             // 
@@ -167,6 +175,7 @@
             this.View_ti.TabIndex = 2;
             this.View_ti.Text = "مشاهده سند";
             this.View_ti.UseSelectable = true;
+            this.View_ti.Click += new System.EventHandler(this.View_ti_Click);
             // 
             // MoeenCode_lb
             // 
@@ -271,14 +280,6 @@
             this.MandeHesab_txbox.Size = new System.Drawing.Size(367, 22);
             this.MandeHesab_txbox.TabIndex = 14;
             // 
-            // DocumentDate_DateTime
-            // 
-            this.DocumentDate_DateTime.Location = new System.Drawing.Point(6, 21);
-            this.DocumentDate_DateTime.MinimumSize = new System.Drawing.Size(0, 30);
-            this.DocumentDate_DateTime.Name = "DocumentDate_DateTime";
-            this.DocumentDate_DateTime.Size = new System.Drawing.Size(170, 30);
-            this.DocumentDate_DateTime.TabIndex = 8;
-            // 
             // DocumentTotal_lb
             // 
             this.DocumentTotal_lb.AutoSize = true;
@@ -289,12 +290,12 @@
             this.DocumentTotal_lb.TabIndex = 15;
             this.DocumentTotal_lb.Text = "جمع سند  ";
             // 
-            // TotalBedehkat_txbox
+            // TotalBedehkar_txbox
             // 
-            this.TotalBedehkat_txbox.Location = new System.Drawing.Point(401, 342);
-            this.TotalBedehkat_txbox.Name = "TotalBedehkat_txbox";
-            this.TotalBedehkat_txbox.Size = new System.Drawing.Size(194, 22);
-            this.TotalBedehkat_txbox.TabIndex = 16;
+            this.TotalBedehkar_txbox.Location = new System.Drawing.Point(401, 342);
+            this.TotalBedehkar_txbox.Name = "TotalBedehkar_txbox";
+            this.TotalBedehkar_txbox.Size = new System.Drawing.Size(194, 22);
+            this.TotalBedehkar_txbox.TabIndex = 16;
             // 
             // TotalBestankar_txbox
             // 
@@ -309,7 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 587);
             this.Controls.Add(this.TotalBestankar_txbox);
-            this.Controls.Add(this.TotalBedehkat_txbox);
+            this.Controls.Add(this.TotalBedehkar_txbox);
             this.Controls.Add(this.DocumentTotal_lb);
             this.Controls.Add(this.MandeHesab_txbox);
             this.Controls.Add(this.Bestankar_txbox);
@@ -328,6 +329,7 @@
             this.Controls.Add(this.Document_gbox);
             this.Name = "NewDocument";
             this.Text = "فرم صدور سند";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NewDocument_FormClosed);
             this.Load += new System.EventHandler(this.NewDocument_Load);
             this.Document_gbox.ResumeLayout(false);
             this.Document_gbox.PerformLayout();
@@ -362,7 +364,7 @@
         private System.Windows.Forms.TextBox MandeHesab_txbox;
         private MetroFramework.Controls.MetroDateTime DocumentDate_DateTime;
         private System.Windows.Forms.Label DocumentTotal_lb;
-        private System.Windows.Forms.TextBox TotalBedehkat_txbox;
+        private System.Windows.Forms.TextBox TotalBedehkar_txbox;
         private System.Windows.Forms.TextBox TotalBestankar_txbox;
     }
 }

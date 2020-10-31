@@ -87,30 +87,34 @@
             this.Save_ti.TabIndex = 4;
             this.Save_ti.Text = "افزودن کاربر";
             this.Save_ti.UseSelectable = true;
+            this.Save_ti.Click += new System.EventHandler(this.Save_ti_Click);
             // 
             // UserName_txbox
             // 
-            this.UserName_txbox.Location = new System.Drawing.Point(31, 109);
+            this.UserName_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserName_txbox.Location = new System.Drawing.Point(31, 115);
             this.UserName_txbox.Multiline = true;
             this.UserName_txbox.Name = "UserName_txbox";
-            this.UserName_txbox.Size = new System.Drawing.Size(309, 42);
+            this.UserName_txbox.Size = new System.Drawing.Size(309, 31);
             this.UserName_txbox.TabIndex = 5;
             // 
             // Password_txbox
             // 
-            this.Password_txbox.Location = new System.Drawing.Point(31, 188);
+            this.Password_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_txbox.Location = new System.Drawing.Point(31, 194);
             this.Password_txbox.Multiline = true;
             this.Password_txbox.Name = "Password_txbox";
-            this.Password_txbox.PasswordChar = '*';
-            this.Password_txbox.Size = new System.Drawing.Size(309, 42);
+            this.Password_txbox.PasswordChar = '●';
+            this.Password_txbox.Size = new System.Drawing.Size(309, 31);
             this.Password_txbox.TabIndex = 6;
             // 
             // Type_txbox
             // 
-            this.Type_txbox.Location = new System.Drawing.Point(31, 266);
+            this.Type_txbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Type_txbox.Location = new System.Drawing.Point(31, 271);
             this.Type_txbox.Multiline = true;
             this.Type_txbox.Name = "Type_txbox";
-            this.Type_txbox.Size = new System.Drawing.Size(309, 42);
+            this.Type_txbox.Size = new System.Drawing.Size(309, 32);
             this.Type_txbox.TabIndex = 7;
             // 
             // NewUserForm
@@ -128,6 +132,7 @@
             this.Controls.Add(this.UserName_lb);
             this.Name = "NewUserForm";
             this.Text = "تعریف کاربر جدید";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NewUserForm_FormClosed);
             this.Load += new System.EventHandler(this.NewUserForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,6 +148,6 @@
         private MetroFramework.Controls.MetroTile Save_ti;
         private System.Windows.Forms.TextBox UserName_txbox;
         private System.Windows.Forms.TextBox Password_txbox;
-        private System.Windows.Forms.TextBox Type_txbox;
+        public System.Windows.Forms.TextBox Type_txbox;
     }
 }
