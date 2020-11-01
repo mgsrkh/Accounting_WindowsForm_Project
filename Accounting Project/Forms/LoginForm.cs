@@ -34,7 +34,9 @@ namespace Accounting_Project.Forms
             connection.ConnectionString = @"data source=MGSRKH\SQLEXPRESS2019; initial catalog=Hesabdari; integrated security=true";
 
             SqlCommand command = new SqlCommand("Usp_Users_Login", connection);
-            command.CommandType = CommandType.StoredProcedure;
+            {
+                command.CommandType = CommandType.StoredProcedure;
+            }
 
             command.Parameters.Clear();
             command.Parameters.AddWithValue("@Username", UserName_tx.Text);
@@ -53,9 +55,9 @@ namespace Accounting_Project.Forms
             //Users Users = _repository.Login(users.UserName, users.Password);
 
             if (reader.HasRows) //Users != null
-            {                
-                MainForm form = new MainForm();                
-                form.Show();                
+            {
+                MainForm form = new MainForm();
+                form.Show();
                 form.Login_lbl.Text = UserName_tx.Text;
                 this.Hide();
             }
@@ -76,7 +78,7 @@ namespace Accounting_Project.Forms
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+
         }
     }
 }

@@ -128,9 +128,6 @@ namespace Accounting_Project.Repositories
             command.CommandType = CommandType.StoredProcedure;
 
             command.Parameters.AddWithValue("@Id", id);
-            //command.Parameters.AddWithValue("@UserName", users.UserName);
-            //command.Parameters.AddWithValue("@Password", users.Password);
-            //command.Parameters.AddWithValue("@Type", users.Type);
 
             connection.Open();
             result = command.ExecuteNonQuery();

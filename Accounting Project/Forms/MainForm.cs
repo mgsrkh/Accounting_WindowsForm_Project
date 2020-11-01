@@ -38,7 +38,15 @@ namespace Accounting_Project
         private void NewDocument_mti_Click(object sender, EventArgs e)
         {
             NewDocument nd = NewDocument.CreateInstance();
-            nd.Show();
+            if (nd != null)
+            {
+                nd.Show();
+            }
+            else
+            {
+                MessageBox.Show("متاسفانه به این آیتم دسترسی ندارین");
+                //Mahdi Test
+            }   
         }
 
         private void MandeHesabReport_mti_Click(object sender, EventArgs e)
